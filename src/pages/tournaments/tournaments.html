@@ -7,12 +7,22 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Tournaments</ion-title>
+    <button ion-button (click)="navigate()"> Go to My Teams </button>
+
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <button ion-button (click)="navigate()"> Go to My Teams </button>
+
+  <ion-title color="primary">Select a Tournament</ion-title>
+
+  <ion-list>
+    <ion-item>
+     <button ion-button (click)="itemTapped()"> March Madness Tournament</button>
+     <button ion-button (click)="itemTapped()"> Summer Showdown </button>
+   </ion-item>
+  </ion-list>
+
 </ion-content>

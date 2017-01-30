@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { TournamentsPage } from '../pages/pages';
+import { TeamDetailPage } from '../pages/pages';
 /*
   Generated class for the Teams page.
 
@@ -17,6 +18,10 @@ export class TeamsPage {
 
   goToTournaments(){
     this.navCtrl.push(TournamentsPage);
+  }
+
+  itemTapped(){
+    this.navCtrl.push(TeamDetailPage);
   }
 
   ionViewDidLoad() {
